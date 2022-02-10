@@ -12,7 +12,7 @@ body{
 
 /******HEADER*******/
 header{
-    min-height: 100px;
+    min-height: 5vh;
     border: 1px dashed red;
     display:flex;
     justify-content: flex-end;
@@ -33,13 +33,14 @@ header{
 
 /*******MAIN*************/
 .container{
-    height:calc(100vh - 100px);
+    height:80vh;
     border:1px dashed green;
     display: flex;
     align-items: flex-start;    /*il div di class 'contenitore.immagine' viene ad avere altezza pari al div flex-container
                                    e questo perché di default la proprietà align-items(la quale definisce in che modo
                                     i flex-item sono disposti lungo il cross axis) è settata come stretch */
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contenitore-immagine{
@@ -47,7 +48,7 @@ header{
 }
 
 .contenitore-immagine img{
-    height:150px;
+    height:130px;
 }
 
 .utente{
@@ -57,9 +58,37 @@ header{
     color:white;
     background-color: lightgray;
 }
-
-
-
-
-
 /*******MAIN*************/
+
+/******FOOTER************/
+footer{
+    height:20vh;
+    border: 1px dashed blue;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.controlli{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icona{
+    width:50px;
+}
+
+.controlli i{
+    
+}
+
+.barra-centrale ul{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/******FOOTER************/
