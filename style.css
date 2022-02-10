@@ -7,7 +7,7 @@
 
 /********BODY***********/
 body{
-    
+    /*overflow-y: hidden;*/
 }
 
 /******HEADER*******/
@@ -36,6 +36,10 @@ header{
     height:calc(100vh - 100px);
     border:1px dashed green;
     display: flex;
+    align-items: flex-start;    /*il div di class 'contenitore.immagine' viene ad avere altezza pari al div flex-container
+                                   e questo perché di default la proprietà align-items(la quale definisce in che modo
+                                    i flex-item sono disposti lungo il cross axis) è settata come stretch */
+    flex-wrap: wrap;
 }
 
 .contenitore-immagine{
@@ -48,9 +52,10 @@ header{
 
 .utente{
     position: absolute;
-    bottom:0px;
+    bottom:10px;
     left:0px;
-    
+    color:white;
+    background-color: lightgray;
 }
 
 
