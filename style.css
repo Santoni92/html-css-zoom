@@ -8,6 +8,7 @@
 /********BODY***********/
 body{
     /*overflow-y: hidden;*/
+    background-color: #000000;
 }
 
 /******HEADER*******/
@@ -33,7 +34,7 @@ header{
 
 /*******MAIN*************/
 .container{
-    height:80vh;
+    height:85vh;
     border:1px dashed green;
     display: flex;
     align-items: flex-start;    /*il div di class 'contenitore.immagine' viene ad avere altezza pari al div flex-container
@@ -62,32 +63,59 @@ header{
 
 /******FOOTER************/
 footer{
-    height:20vh;
+    height:15vh;
     border: 1px dashed blue;
+    background-color: #232323;
     display:flex;
     justify-content: space-between;
+    color:white;
 
 }
 
 .controlli{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;  
 }
 
 .icona{
     width:50px;
 }
 
-.controlli i{
-    
+.barra-centrale{    /*così da mettere il suo contenuto (cioè la unordered-list) al centro*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .barra-centrale ul{
-    display:flex;
+    display:flex;   /*di default è flex-direction:row;  in questo modo posiziono i list item uno affianco all'altro*/
     list-style-type: none;
     align-items: center;
+}
+
+.barra-centrale ul li{  /*così da mettere uno sotto l'altro l'icona ed il link presenti nei vari list item dell'unordered list*/
+    display: flex;  
+    flex-direction: column;
+    align-items:center;
+    width:80px;
+    height:80px;
+}
+
+.barra-centrale ul li i{
+    height:20px;
+}
+
+.barra-centrale ul li a{
+    text-decoration: none;
+}
+
+.end-meeting{
+    background-color: #4a4a4a;
+    display: flex;
+    align-items: center;
     justify-content: space-around;
+    color:red;
 }
 
 
