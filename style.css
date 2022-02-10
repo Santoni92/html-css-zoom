@@ -13,7 +13,7 @@ body{
 
 /******HEADER*******/
 header{
-    min-height: 5vh;
+    height: 5vh;
     border: 1px dashed red;
     display:flex;
     justify-content: flex-end;
@@ -76,16 +76,33 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;  
+    width:20%;
+    padding: 0px 10px;
+}
+
+.audio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+}
+
+.video{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
 }
 
 .icona{
-    width:50px;
+    width:10px;
 }
 
 .barra-centrale{    /*così da mettere il suo contenuto (cioè la unordered-list) al centro*/
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width:70%;
 }
 
 .barra-centrale ul{
@@ -100,6 +117,7 @@ footer{
     align-items:center;
     width:80px;
     height:80px;
+    padding:15px;
 }
 
 .barra-centrale ul li i{
