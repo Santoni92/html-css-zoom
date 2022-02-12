@@ -8,12 +8,13 @@
 /********BODY***********/
 body{
     /*overflow-y: hidden;*/
+    font-family: sans-serif;
     background-color: #000000;
 }
 
 /******HEADER*******/
 header{
-    height: 5vh;
+    height: 35px;
     border: 1px dashed red;
     display:flex;
     justify-content: flex-end;
@@ -22,9 +23,8 @@ header{
 
 .comandi-header{
     background-color: #4d4b4b;
-    border-radius: 10%;
     color:white;
-    padding:2px;
+    padding:5px;
 }
 
 .speaker-view{
@@ -34,7 +34,7 @@ header{
 
 /*******MAIN*************/
 .container{
-    height:85vh;
+    flex-grow: 1;
     border:1px dashed green;
     display: flex;
     align-items: flex-start;    /*il div di class 'contenitore.immagine' viene ad avere altezza pari al div flex-container
@@ -63,7 +63,7 @@ header{
 
 /******FOOTER************/
 footer{
-    height:15vh;
+    height:118px;
     border: 1px dashed blue;
     background-color: #232323;
     display:flex;
@@ -83,6 +83,7 @@ footer{
 .audio{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width:50%;
 }
@@ -90,12 +91,9 @@ footer{
 .video{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width:50%;
-}
-
-.icona{
-    width:10px;
 }
 
 .barra-centrale{    /*così da mettere il suo contenuto (cioè la unordered-list) al centro*/
