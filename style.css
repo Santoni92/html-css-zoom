@@ -12,9 +12,15 @@ body{
     background-color: #000000;
 }
 
+.full-page {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+  }
+
 /******HEADER*******/
 header{
-    height: 35px;
+    flex-basis: 35px;
     border: 1px dashed red;
     display:flex;
     justify-content: flex-end;
@@ -34,10 +40,13 @@ header{
 
 /*******MAIN*************/
 .container{
+    width:100%;
+    height:100%;
+    overflow-y: auto;
     flex-grow: 1;
     border:1px dashed green;
     display: flex;
-    align-items: flex-start;    /*il div di class 'contenitore.immagine' viene ad avere altezza pari al div flex-container
+    align-items: center;    /*il div di class 'contenitore.immagine' viene ad avere altezza pari al div flex-container
                                    e questo perché di default la proprietà align-items(la quale definisce in che modo
                                     i flex-item sono disposti lungo il cross axis) è settata come stretch */
     flex-wrap: wrap;
@@ -45,6 +54,7 @@ header{
 }
 
 .contenitore-immagine{
+    border: 3px solid black;
     position:relative;
 }
 
@@ -63,7 +73,7 @@ header{
 
 /******FOOTER************/
 footer{
-    height:118px;
+    flex-basis:118px;
     border: 1px dashed blue;
     background-color: #232323;
     display:flex;
@@ -85,7 +95,6 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:50%;
 }
 
 .video{
@@ -93,14 +102,12 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:50%;
 }
 
 .barra-centrale{    /*così da mettere il suo contenuto (cioè la unordered-list) al centro*/
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width:70%;
 }
 
 .barra-centrale ul{
@@ -133,6 +140,4 @@ footer{
     justify-content: space-around;
     color:red;
 }
-
-
 /******FOOTER************/
